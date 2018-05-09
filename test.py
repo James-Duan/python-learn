@@ -16,7 +16,6 @@ def get_path():
 def main():
     print "path %s" % get_path()
     print "2+3=%s" % add(2, 3)
-    print "3+3=%s" % add(3, 3)
     print "3*3=%s" % plus(3, 3)
 
 
