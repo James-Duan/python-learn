@@ -6,7 +6,7 @@ def get_path():
 
 
 def main():
-    print get_path()
+    print "path %s" % get_path()
 
 
 if __name__ == '__main__':
