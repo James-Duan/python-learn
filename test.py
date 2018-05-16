@@ -1,17 +1,14 @@
 import os
-import functools
+import log
 
 
-def log(func):
-    @functools.wraps(func)
-    def wrapper(*args, **kw):
-        print '%s %s:' % (func, func.__name__)
-        return func(*args, **kw)
-    return wrapper
+def set_log(log_txt):
+    return log_txt
 
 
-@log
+@log.log(log='')
 def get_path():
+
     return os.getcwd()
 
 
